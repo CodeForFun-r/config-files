@@ -1,0 +1,64 @@
+! do not scroll with output
+URxvt*scrollTtyOutput: true
+
+! scroll in relation to buffer (with mouse scroll or Shift + Page Up)
+URxvt*scrollWithBuffer:	true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+URxvt.font:		xft:monospace:size=12:antialias=true:hinting=true:hintstyle=hintslight:lcdfilter=lcddefault:autohint=false
+
+URxvt.scrollBar:	false
+
+URxvt.depth:		32
+
+URxvt.background:	[95]#0c0d0e
+URxvt.foreground:	#f2f4f7
+URxvt.cursorColor:	cyan
+
+! black
+*.color0:	#0c0d0e
+*.color8:	#737475
+
+! red
+*.color1:	#e31a1c
+*.color9:	#e31a1c
+
+! green
+*.color2:	#31a354
+*.color10:	#31a354
+
+! yellow
+*.color3:	#dca060
+*.color11:	#dca060
+
+! blue
+*.color4:	#3182bd
+*.color12:	#3182bd
+
+! magenta
+*.color5:	#756bb1
+*.color13:	#756bb1
+
+! cyan
+*.color6:	#80b1d3
+*.color14:	#80b1d3
+
+! white hightlight color
+*.color7:	#80b1d3
+*.color15:	#80b1d3
+
+URxvt.perl-ext:		default,url-select,keyboard-select,clipboard
+URxvt.colorUL:		#4682B4
+
+URxvt.keysym.M-u:		perl:url-select:select_next
+URxvt.url-select.launcher:	/usr/bin/firefox
+URxvt.url-select.underline:	true
+URxvt.select.button:		1
+
+URxvt.keysym.M-k:	perl.keyboard-select:activate
+
+URxvt.clipboard.autocopy:	true
+URxvt.keysym.M-c:		perl:clipboard:copy
+URxvt.keysym.M-v:		perl:clipboard:paste
